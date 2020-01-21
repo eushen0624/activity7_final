@@ -1,0 +1,257 @@
+	*{
+		margin: 0px;
+		padding: 0px;
+		box-sizing: border-box;
+		font-family: 'DM Sans', sans-serif;
+	}
+
+	/*CSS for Header*/
+	header{
+		height: 110vh;
+		background: url(../images/bg1.jpg);
+		background-size: cover;
+		background-position: center;
+
+	}
+
+	nav{
+		height: 75px;
+		border-bottom: 1px solid whitesmoke;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: sticky;
+		top: 0;
+		text-shadow: 2px 2px 3px black, 2px 2px 10px black;
+
+	}
+
+	nav > ul{
+		display: flex;
+		list-style-type: none;
+		color: #ffd11a;
+		font-weight: bold;
+
+	}
+
+	nav > ul > li {
+		margin: 0 20px;
+
+	}
+
+	/*Styling for all buttons*/
+	.btn {
+		padding: 10px 20px;
+		border-radius: 10px;
+		border: none;
+	}
+
+	.btn-product {
+		background-color: #b38f00;
+		font-size: 15px;
+		font-weight: bold;
+		color: black	;
+	}
+
+	#deskBtn{
+		position: absolute;
+		right: 100px;
+		top: 20px;
+		transition: .6s;
+	}
+
+
+	#deskBtn:hover{
+		top: 15px;
+	}
+
+	/*Disappearing Menu*/
+	.subMenu{ 
+		background-color: whitesmoke;
+		width: 80%;
+		border-radius: 15px;
+		height: 200px;
+		display:flex;
+		position: absolute;
+		left: 10%;
+		top: 50px;
+		visibility: hidden;
+		color: black;
+	 }
+
+	 .subMenu > div {
+	 	width: 25%;
+
+	 }
+
+	/* div + div {
+	 	border-left: 1px solid black;
+	 }*/
+
+	.subMenu >  div > h4 , .subMenu >  div > p{
+	 	margin: 10px 0;
+	 	padding: 0 10px;
+	 }
+
+	 .subMenu > div > p:hover {
+	 	background-color: lightgray;
+	 }
+
+	 #mega-menu:hover  > .subMenu, #mega-menu:hover >.subMenu{
+	 	visibility: visible;
+	 }
+
+	.header-text {
+		height: 90vh;
+		width: 50%;
+		color: whitesmoke;
+		display:flex;
+		flex-direction: column;
+		justify-content: center;
+
+	}
+
+	.header-text > h1 {
+		font-size: 60px;
+
+	}
+
+	.header-text > div > .btn {
+		margin-top: 20px;
+		background-color: #b38f00;
+		color: navy;
+	}
+
+	.header-text > h1 , .header-text > p , .header-text > div >.btn {
+		margin-left: 50px;
+	}
+
+	/*End Css for Header*/
+
+	/*Start of Quote CSS*/
+	.quote{
+		height: 50vh;
+		border-bottom: 1px solid whitesmoke;
+		background-color: lightgray;
+		display:flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+
+	.quote > div{
+		width: 50%;
+	}
+
+	.quote > div > div {
+		text-align: center;
+		margin-top: 20px;
+	}
+
+	.quote > div > div > .btn {
+		background-color: gray;
+	}
+
+	.office {
+		height: 90vh;
+		border-bottom: 1px solid whitesmoke;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding-right: 100px;
+	}
+	/*LEFT PART*/
+	.office > .office-pic {
+		width: 50%;
+
+	}
+
+	.office > .office-pic  > img{
+		height: 350px;
+		width: 550px;
+		border-radius: 5px;
+		margin-left: 100px;
+	}
+	/*RIGHT PART*/
+	.office > .office-text {
+		margin-left: 100px;
+
+	}
+
+	.office > .office-text > h1{
+		font-size:30px;
+	}
+	.office > .office-text > div {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding-top: 20px;
+		
+	}
+
+	span {
+		font-size: 20px;
+		position: absolute;
+	}
+
+	.office > .office-text > div > div > h1{
+		font-size: 50px;
+	}
+	/*End of Quote CSS*/
+
+	/*Start of Profile CSS*/
+
+	.people {
+		height: 100vh;
+		text-align: center;
+	}
+
+	.people > .people-bottom {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.people-bottom > div {
+		height: 250px;
+		width: 250px;
+		border: 2px solid gray;
+		margin: 10px;
+		border-radius: 10px;
+
+	}
+
+	.people-bottom > div: hover {
+		
+	}
+
+	.people > .people-bottom > div > .sect1 {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 180px;
+		padding: 5px;
+	}
+	.people > .people-bottom  > div > .sect2 > img {
+		position: relative;
+		z-index: 10;
+		height: 50px;
+		width: 50px;
+		border-radius: 50%;
+		bottom: 30px;
+
+	}
+	.people > .people-bottom  > div > .sect2 > h3 {
+		margin: -30px;
+	}
+
+	.people > .people-bottom > div > .sect2{
+		text-algin: center;
+
+	}
+
+	.people > .people-bottom > div > hr {
+		position: relative;
+
+	}
+	/*End of Profile CSS*/
