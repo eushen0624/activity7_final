@@ -15,6 +15,7 @@
 	}
 
 	nav{
+		background-color: black;
 		height: 75px;
 		border-bottom: 1px solid whitesmoke;
 		display: flex;
@@ -22,7 +23,7 @@
 		align-items: center;
 		position: sticky;
 		top: 0;
-		text-shadow: 2px 2px 3px black, 2px 2px 10px black;
+		
 
 	}
 
@@ -204,25 +205,32 @@
 	.people {
 		height: 100vh;
 		text-align: center;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
 	}
 
 	.people > .people-bottom {
 		display: flex;
 		justify-content: center;
 		align-items: center;
+
 	}
 
 	.people-bottom > div {
 		height: 250px;
 		width: 250px;
 		border: 2px solid gray;
-		margin: 10px;
+		margin: 30px  20px;
 		border-radius: 10px;
 
 	}
 
-	.people-bottom > div: hover {
-		
+	.people-bottom > div:hover {
+		margin-bottom: 10px;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		transition: 0.5s;
 	}
 
 	.people > .people-bottom > div > .sect1 {
